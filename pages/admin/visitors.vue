@@ -130,7 +130,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 definePageMeta({
   layout: 'dashboard'
 })
@@ -147,21 +147,21 @@ export default {
     }
   },
   created () {
-    this.getVisitors()
+    // this.getVisitors()
   },
   methods: {
     getVisitors (page) {
-      if (page) {
-        axios.get(page, { params: { duration: this.duration }}).then(res => this.visitors = res.data)
-      } else {
-        axios.get('http://localhost:8000/api/visitors',
-          {
-            params: {
-              duration: this.duration
-            }
-          })
-          .then((res) => this.visitors = res.data)
-      }
+      // if (page) {
+      //   axios.get(page, { params: { duration: this.duration }}).then(res => this.visitors = res.data)
+      // } else {
+      //   axios.get('http://localhost:8000/api/visitors',
+      //     {
+      //       params: {
+      //         duration: this.duration
+      //       }
+      //     })
+      //     .then((res) => this.visitors = res.data)
+      // }
     },
     setWeek (duration) {
       this.duration = duration

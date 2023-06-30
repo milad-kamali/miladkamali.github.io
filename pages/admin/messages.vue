@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 
 definePageMeta({
   layout: 'dashboard'
@@ -49,14 +49,14 @@ export default {
   },
   methods: {
     getMessages () {
-      axios.get('api/messages')
-        .then((res) => this.messages = res.data)
+      // axios.get('api/messages')
+      //   .then((res) => this.messages = res.data)
     },
     confirmDelete (id, index) {
-      if (confirm("Are you sure?")) {
-        axios.delete('api/message', { params: { id: id } })
-        this.messages.splice(index, 1)
-      }
+      // if (confirm("Are you sure?")) {
+      //   axios.delete('api/message', { params: { id: id } })
+      //   this.messages.splice(index, 1)
+      // }
     }
   }
 }

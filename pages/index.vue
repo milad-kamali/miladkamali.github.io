@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="/images/milad kamali.jpg"
+      src="/images/milad-kamali.jpg"
       alt="Milad Kamali"
       class="w-64 h-64 mx-auto mt-5 rounded-3xl"
     >

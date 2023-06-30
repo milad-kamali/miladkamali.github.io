@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   head () {
@@ -69,19 +69,19 @@ export default {
   methods: {
     sendEmail () {
       this.success = ''
-      if (!this.loading) {
-        this.loading = true
-        axios.post('api/message', { ...this.email } ).then(() => {
-          this.loading = false
-          this.email.name = ''
-          this.email.email = ''
-          this.email.message = ''
-          this.success = 'true'
-        }).catch(err => {
-          this.loading = false
-          this.success = 'false'
-        })
-      }
+      // if (!this.loading) {
+      //   this.loading = true
+      //   axios.post('api/message', { ...this.email } ).then(() => {
+      //     this.loading = false
+      //     this.email.name = ''
+      //     this.email.email = ''
+      //     this.email.message = ''
+      //     this.success = 'true'
+      //   }).catch(err => {
+      //     this.loading = false
+      //     this.success = 'false'
+      //   })
+      // }
     }
   }
 }

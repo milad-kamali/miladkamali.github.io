@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   css: ["@/assets/css/style.css"],
   app: {
+    baseURL: '/miladkamali.github.io/',
     head: {
       meta: [
         {charset: "utf-8"},
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
         { name: "theme-color", content: "#122239" }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap' },
@@ -25,10 +26,7 @@ export default defineNuxtConfig({
     postcss: {
       postcssOptions: require("./postcss.config.js")
     }
-  },
-  plugins: [
-    './plugins/axios.js',
-  ],
+  }
   // routeRules: {
   //   '/admin/**': { ssr: false }
   // }
